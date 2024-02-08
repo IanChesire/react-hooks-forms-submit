@@ -29,14 +29,14 @@ function Form(props) {
     setErrors([]);
   }
   else {
-    setErrors (["First name is required!"]);
+    errors (["First name is required!"]);
   }
 }
 
   const listOfSubmissions = submittedData.map((data, index) => {
     return(
       <div key={index}>
-        {data.firstName} {data.LastName}
+        {data.firstName} {data.lastName}
       </div>
     );
   });
